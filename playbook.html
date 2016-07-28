@@ -1,0 +1,87 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="http://www.footballplaybookonline.com/style.css">
+  <!-- JQuery styling -->
+  <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+
+  <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <!-- JQuery scripts -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+
+  <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <script>
+    $( function() {
+      $( "#menu" ).menu({
+        position: { my: " top", at: "center top" }
+
+      });
+    } );
+  </script>
+
+  <style>
+    #menu{
+      width:800px;
+    }
+    #menu li {
+      width: 150px;
+      float:left;
+    }
+    #menu li ul, menu li ul li{
+      width: 150px;
+    }
+
+    .nav-item{
+	color:#BABABA;
+	float:left;
+	padding:14px 23px 7px 23px;
+	display:block;
+}
+.nav-item:hover{
+
+	text-decoration:underline;
+	display:block;
+}
+  </style>
+
+</head>
+
+
+<body>
+  <div class="content-wrap">
+  	<div class="content-full">
+
+            <ul id="menu">
+              <li ><div>Play</div>
+                <ul>
+                  <li>New</li>
+                  <li>Edit</li>
+                  <li>Duplicate</li>
+                  <li>Delete</li>
+                </ul>
+              </li>
+              <li class="nav-item"><div>Print to PDF</div>
+                <ul>
+                  <li>All Plays</li>
+                  <li>Selected Plays</li>
+                </ul>
+              </li>
+            </ul>
+
+      <div id='flashcontent' style="border:1px">
+        <div id="playTableDiv" style="width:300px; float:left; clear:left;">
+
+          <script src="scripts/playbookTable.js"></script>
+
+        </div>
+        <div id="playDisplay" style="width:600px; float:right;" >
+          <h1> Select a play</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
